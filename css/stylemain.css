@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter Tight;
+  font-weight: 500;
+  background: url('../img/back.png') no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

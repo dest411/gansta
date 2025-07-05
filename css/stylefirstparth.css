@@ -1,5 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 .firstparth{
-    margin: 80px 80px 140px 80px;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 140px;
     width: 95%;
-    height: 100%;
+    height: 100%
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+    
+}
+.logo-left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 8px;
+}
+.logo-left h1{
+    color: #FFEB33;
+    font-size: 30px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.logo-left-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    margin-right: 47px;
+}
+.logo-left-menu h6{
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.menuimg-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    opacity: 0.7;
+    
+}
+.whatimg{
+    opacity: 0.7;
+    
+}
+
+.logo-right{
+    position: relative;
+    margin-right: 40px;
+    
+}
+
+.bgimg{
+    position: absolute;
+    top: -200px;
+    right: -170px;
+    z-index: -1;
+    transform: scale(0.7);
+    
+}
+
+/* HERO */
+
+.text-left{
+    width: 40%;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Anton';
+    opacity: 0.7;
+    line-height: 1.1;
+    letter-spacing: 4px;
+}
+.text-center{
+    width: 10%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-center h6{
+    margin-left: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+.text-center h5{
+    margin-bottom: 70px;
+    margin-right: 75px;
+    font-size: 14px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    align-self: flex-end;
+    margin-top: auto; /* Додаємо! */
+    transform:rotate(-90deg);
+    color: #7B7B7B;
+}
+
+.hero{
+    display: flex;
+    height: 400px;
+}
+
+.button button{
+    position: relative;
+    background-color: hsl(54, 80%, 40%);
+    padding: 36px 40px;
+    clip-path: polygon(
+    10px 0%, 
+    100% 0%, 
+    100% calc(100% - 10px), 
+    calc(100% - 10px) 100%, 
+    0% 100%, 
+    0% 10px
+);
+    color: black;
+
+    border: none;
+    text-transform: uppercase;
+    font-family: Inter Tight;
+    font-weight: 500;
+    
+    
+}
+
+.button{
+    position: absolute;
+    left: 678px;
+    bottom: 10px;
+    
 }

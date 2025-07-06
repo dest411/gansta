@@ -13,7 +13,8 @@
     color: black;
     width: 95%;
     margin: 0 auto;
-    
+    position: relative;
+    z-index: 3;
 }
 
 .leftblock,
@@ -21,7 +22,7 @@
 .rightblock {
     flex: 1;
     justify-content: center;
-    background-color: red;
+    background-color: none;
     display: flex;
     flex-direction: column;
     align-items: center; /* центрує по горизонталі */
@@ -106,7 +107,7 @@
 .btn button{
     cursor: pointer;
     position: relative;
-    background-color: hsl(54, 80%, 40%);
+    background-color: hsl(54, 80%, 50%);
     padding: 36px 40px;
     clip-path: polygon(
     10px 0%, 
@@ -128,3 +129,105 @@
 }
 
 
+/* LEFT SIDE */
+
+.leftblock{
+    position: relative;
+    gap: 45px;
+    margin-top: 200px;
+    align-items: flex-end;
+    padding-right: 50px;
+    z-index: 2;
+}
+
+.peopleinteam {
+    background-color: black;
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    clip-path: polygon(
+    10px 0%, 
+    100% 0%, 
+    100% calc(100% - 10px), 
+    calc(100% - 10px) 100%, 
+    0% 100%, 
+    0% 10px
+  );
+  width: 200px;
+  height: 220px;
+  background: black; /* або будь-який колір */
+}
+
+.peopleinteam img {
+    width: 100px;
+    height: 100px;
+    
+    align-self:flex-start;
+    
+}
+
+.peopleinteam h1{
+    font-size: 50px;
+    color: yellow;
+    text-transform: uppercase;
+}
+.growthlast2year {
+    background-color: black;
+    color: white;
+    
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    
+    clip-path: polygon(
+    10px 0%, 
+    100% 0%, 
+    100% calc(100% - 10px), 
+    calc(100% - 10px) 100%, 
+    0% 100%, 
+    0% 10px
+  );
+  width: 200px;
+  height: 220px;
+  background: black; /* або будь-який колір */
+}
+
+.growthlast2year img {
+    width: 50px;
+    height: 50px;
+    
+    align-self:flex-start;
+}
+
+.growthlast2year h1{
+    font-size: 50px;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.about{
+    position: relative;
+}
+.gansta {
+    position: absolute;
+    color: #D1D1D1;
+    font-size: 8px;
+    width: 110px;
+    line-height: 1.4;
+    left: 210px;
+    bottom: 472px;
+    z-index: 1;
+}
+.gansta2 {
+    position: absolute;
+    color: #D1D1D1;
+    font-size: 8px;
+    width: 110px;
+    line-height: 1.4;
+    left: 78px;
+    bottom: 159px;
+    z-index: 1;
+}
